@@ -6,8 +6,23 @@
 /*   By: tphillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/14 20:25:20 by tphillan          #+#    #+#             */
-/*   Updated: 2019/07/14 20:25:43 by tphillan         ###   ########.fr       */
+/*   Updated: 2019/07/15 14:47:26 by tphillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_strdup(const char *s1)
+{
+	int i;
+	char *t;
+
+	i = 0;
+	t = (char *)malloc(sizeof(char));
+	while (s1[i] != '\0')
+	{
+		t[i] = s1[i];
+		i++;
+	}
+	return (t);
+}
