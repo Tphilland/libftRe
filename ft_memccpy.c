@@ -24,9 +24,8 @@ void	*ft_memccpy(void *dst, const void *src,int c, size_t n)
 	while (i < n)
 	{
 		if (csrc[i] == c)
-			return (&csrc[i + 1]);
+			&src[i+1];
 		cdst[i] = csrc[i];
 		i++;
 	}
-	return (NULL);
 }
