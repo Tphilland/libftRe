@@ -6,7 +6,7 @@
 /*   By: tphillan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/12 12:45:15 by tphillan          #+#    #+#             */
-/*   Updated: 2019/07/12 13:13:24 by tphillan         ###   ########.fr       */
+/*   Updated: 2019/07/20 00:51:47 by tphillan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <stddef.h>
+#include <ctype.h>
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strnlen(const char *s, size_t maxlen);
@@ -31,6 +32,15 @@ char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strdup(const char *s1);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 void	ft_putchar(char c);
+int     ft_isalpha(int c);
+int     ft_isalnum(int c);
+int     ft_isdigit(int c);
+int     ft_isupper(int c);
+int     ft_islower(int c);
+int     ft_toupper(int c);
+int     ft_tolower(int c);
+int     ft_isascii(int c);
+int     ft_isprint(int c);
 
 #endif
 
