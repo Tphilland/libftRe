@@ -41,6 +41,9 @@ int     ft_toupper(int c);
 int     ft_tolower(int c);
 int     ft_isascii(int c);
 int     ft_isprint(int c);
-
+char *ft_strchr(const char *s, int c);
+void    ft_strclr(char *s);
+void    ft_putendl(char const *s);
+void    ft_putendl_fd(char const *s, int fd);
 #endif
 
