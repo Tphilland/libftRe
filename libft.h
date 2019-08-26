@@ -45,5 +45,11 @@ char *ft_strchr(const char *s, int c);
 void    ft_strclr(char *s);
 void    ft_putendl(char const *s);
 void    ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr(int n);
+void	ft_putnbr_fd(int n, int fd);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
+void	*ft_memalloc(size_t size);
+char	*ft_strnew(size_t size);
+char	*ft_strrchr(const char *s, int c);
 #endif
 
