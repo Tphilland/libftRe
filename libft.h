@@ -51,5 +51,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len);
 void	*ft_memalloc(size_t size);
 char	*ft_strnew(size_t size);
 char	*ft_strrchr(const char *s, int c);
+void    ft_putstr_fd(char const *s, int fd);
+void    ft_putstr(char const *s);
 #endif
 
