@@ -1,7 +1,20 @@
-#include "libft"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tphillan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/02 13:47:55 by tphillan          #+#    #+#             */
+/*   Updated: 2019/09/02 13:48:04 by tphillan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memalloc(size_t size)
 {
-	void *s;
-	s = (void *)malloc(size*sizeof(void) + 1);
+	char *s;
+	s = (char *)malloc(size * sizeof(char) + 1);
+	return ((void *)s);
 }

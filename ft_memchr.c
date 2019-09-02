@@ -25,7 +25,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (usrc[i] == uc)
 		{
-			return (usrc);
+			return ((void *)usrc);
 		}
 		i++;
 		usrc++;
