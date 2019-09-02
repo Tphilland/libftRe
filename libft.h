@@ -53,5 +53,9 @@ char	*ft_strnew(size_t size);
 char	*ft_strrchr(const char *s, int c);
 void    ft_putstr_fd(char const *s, int fd);
 void    ft_putstr(char const *s);
+char    *ft_strmap(char const *s, char (*f)(char));
+char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
 #endif
+
 
