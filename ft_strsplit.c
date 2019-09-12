@@ -1,11 +1,13 @@
 #include	"libft.h"
 
-/*My program allocates many(unknown number) pieces of memory and gives those small pieces to
- * a two 2D matrix filled with characters from string s, 
+/*My function creates an unknown number of pieces of memory(might vary in size), take those pieces of memory
+ * fill them with portions of string s,and give those small pieces of string s to
+ * a double pointer. 
  *
- *The program has to know the size of the string s, and to treat char c as the null terminator.
- *The program should also go back to string s, disect it like that in portions, (using c as a terminator) until the end of 
- * the string
+ *The program has to know the size of the string s, and to treat char c as the end of the small strings that will then be copied 
+ *to the memory.
+ *The program should also go back to string s, cut it in portions (using c as a terminator) until the end of 
+ * the string s.
  * */
 
 int	stringcount(char *s, char c)
